@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url('https://i.picsum.photos/id/619/1200/780.jpg?hmac=KZNdj285MH_rqnhdB4DlyO8XGgwtaANOi56AO-_cLog') center;
+    background-color: #F5DEB3;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #282828;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.sound-wrapper {
+    padding: 16px;
+    text-align: center;
+    width: 100vw;
+}
+
+.sound-headline {
+    color: #fff;
+    margin-top: 16px;
+}
+
+.keys {
+    background-color: rgba(255, 255, 255, .5);
+    display: inline-block;
+    margin-top: 24px;
+}
+
+@media screen and (min-width: 640px) {
+    .sound-wrapper {
+        padding: 40px;
+    }
+    .keys {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.key {
+    background: rgba(0, 0, 0, .4);
+    border: 4px solid #282828;
+    border-radius: 15px;
+    color: #fff;
+    margin: 16px;
+    padding: 16px 8px;
+    /* change transition to inspect in DevTools how class gets applied and removed */
+    transition: all .5s ease;
+    text-align: center;
+}
+
+.playing {
+    border-color: #F5DEB3;
+    box-shadow: 0 0 1rem #F5DEB3;
+    transform: scale(1);
+}
+
+.letter,
+.sound {
+    display: block;
+}
+
+.letter {
+    font-size: 2em;
+}
+
+.sound {
+    color: #F5DEB3;
+    font-size: 1em;
+}

@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5dbb3;
+    color: #282828;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    padding: 24px;
+    text-align: center;
+}
+
+.exercise-list {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 32px;
+    padding: 0 34px;
+    text-align: left;
+}

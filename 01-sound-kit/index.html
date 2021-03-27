@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 | Sound Kit</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="sound-wrapper">
+        <h1 class="sound-headline">Press displayed keys on keyboard to start sound mess</h1>
+        <section class="keys">
+            <div data-key="65" class="key">
+                <span class="letter">A</span>
+                <span class="sound">Ape</span>
+            </div>
+            <div data-key="83" class="key">
+                <span class="letter">S</span>
+                <span class="sound">Swan</span>
+            </div>
+            <div data-key="68" class="key">
+                <span class="letter">D</span>
+                <span class="sound">Dog</span>
+            </div>
+            <div data-key="70" class="key">
+                <span class="letter">F</span>
+                <span class="sound">Falcon</span>
+            </div>
+            <div data-key="71" class="key">
+                <span class="letter">G</span>
+                <span class="sound">Goat</span>
+            </div>
+            <div data-key="72" class="key">
+                <span class="letter">H</span>
+                <span class="sound">Horse</span>
+            </div>
+            <div data-key="74" class="key">
+                <span class="letter">J</span>
+                <span class="sound">Jaguar</span>
+            </div>
+            <div data-key="75" class="key">
+                <span class="letter">K</span>
+                <span class="sound">Kitty Kat</span>
+            </div>
+            <div data-key="76" class="key">
+                <span class="letter">L</span>
+                <span class="sound">Leopard Seal</span>
+            </div>
+        </section>
+        <!-- project has been transferred from CodePen -> intentionally implemented links here - will keep this for now -->
+        <section>
+            <audio data-key="65" src="http://ring-nature.com/tones/monkey.mp3"></audio>
+            <audio data-key="83"
+                src="https://www.vogelstimmen.info/Vogelstimmen_GRATIS/Weissstorch_Ciconia_ciconia_SK_AMPLE-E0196.mp3"></audio>
+            <audio data-key="68" src="http://www.freesoundvault.com/sounds/sound_fx/dogbark.wav"></audio>
+            <audio data-key="70"
+                src="http://www.vogelstimmen.info/Vogelstimmen_GRATIS/Wuergfalke_Falco_cherrug_R_AMPLE-E0369.mp3"></audio>
+            <audio data-key="71" src="http://seh-audio.s3.amazonaws.com/goat_sound_short.mp3"></audio>
+            <audio data-key="72" src="http://thestablesbb.powweb.com/WAV%20FILES/horse_trot.wav"></audio>
+            <audio data-key="74" src="http://thestablesbb.powweb.com/WAV%20FILES/jaguar.wav"></audio>
+            <audio data-key="75" src="http://www.cogapa.com/wavs/G4-13.wav"></audio>
+            <audio data-key="76" src="http://www.babybeanie.com/sounds/seal.wav"></audio>
+        </section>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

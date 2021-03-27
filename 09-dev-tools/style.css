@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5dbb3;
+    color: #282828;
+    font-family: 'helvetica neue', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+    padding: 24px;
+    text-align: center;
+}
+
+p {
+    background-color: #fff;
+    display: inline-block;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 50px 0;
+    padding: 24px;
+}
+
+.info {
+    display: block;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 32px;
+    padding: 0 34px;
+    text-align: center;
+}

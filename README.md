@@ -19,6 +19,7 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 [01 - Sound Kit](#01-sound-kit)
 
 [02 - Clock](#02-clock)
+
 [03 - Update CSS Variables](#03-update-css-variables)
 
 [04 - Arrays and Methods](#04-arrays-and-methods)
@@ -40,6 +41,8 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 [12 - Key Sequence Detection](#12-key-sequence-detection)
 
 [13 - Slide in on scroll](#13-slide-in-on-scroll)
+
+[14 - Arrays and Objects](#14-arrays-and-objects)
 
 #### 01 Sound Kit
 
@@ -113,3 +116,8 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 #### 13 Slide In On Scroll
 
 ![slide-in-on-scroll](/screenshots/screen13-slide-in-on-scroll.png)
+
+#### 14 Arrays and Objects
+
+![arrays-and-objects](/screenshots/screen14-arrays-and-objects.png)
+Reference vs Copy

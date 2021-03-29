@@ -37,6 +37,8 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 
 [11 - Custom HTML4 Video Player](#11-custom-html5-video-player)
 
+[12 - Key Sequence Detection](#12-key-sequence-detection)
+
 #### 01 Sound Kit
 
 ![sound-kit](/screenshots/screen01-sound-kit.png)
@@ -81,3 +83,12 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 #### 11 Custom HTML4 Video Player
 
 ![custom-html5-video-player](/screenshots/screen11-video-player.png)
+
+#### 12 Key Sequence Detection
+
+![key-sequence-detection](/screenshots/screen12-key-sequence01.png)
+
+[Konami Code](https://de.wikipedia.org/wiki/Konami_Code)
+![key-sequence-detection](/screenshots/screen12-key-sequence02.png)
+[Cornify Github](https://github.com/Cornify/Cornify)
+[Cornify.com](https://www.cornify.com/)

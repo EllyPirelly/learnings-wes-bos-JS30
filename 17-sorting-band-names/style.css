@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url("metal-2000x2000.jpg") center no-repeat;
+    background-color: #027f80;
+    background-size: cover;
+}
+
+body {
+    color: #012a3e;
+    font-family: arial, helvetica, sans-serif;
+    padding: 42px 32px 32px 32px;
+    height: 100vh;
+}
+
+#bands {
+    background: #fff;
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.25);
+    font-size: 16px;
+    list-style: inside square;
+    margin: auto;
+    width: 500px;
+}
+
+#bands li {
+    border-bottom: 1px solid #efefef;
+    padding: 14px;
+}
+
+#bands li:last-child {
+    border-bottom: 0;
+}

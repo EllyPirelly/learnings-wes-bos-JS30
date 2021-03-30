@@ -48,23 +48,19 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 
 [16 - CSS Text Shadow Mouse Move Effect](#16-css-text-shadow-mouse-move-effect)
 
+[17 - Sort Without Article](#17-sort-without-article)
 
 #### 01 Sound Kit
-
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
 #### 02 Clock
-
 ![clock](/screenshots/screen02-clock.png)
 
 #### 03 Update CSS Variables
-
 ![update-css-variables](/screenshots/screen03-update-css-vars.png)
 
 #### 04 Arrays and Methods
-
 ![arrays-and-methods-one](/screenshots/screen04-arrays-and-methods.png)
-
 - `Array.prototype.filter()`: Filter the list of inventors for those who were born in the 1500's
 - `Array.prototype.map()`: Give us an array of the inventors first and last names
 - `Array.prototype.sort()`: Sort the inventors by birthdate, oldest to youngest
@@ -75,18 +71,14 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 - Reduce Exercise: Sum up the instances of each of these
 
 #### 05 Flex Panels
-
 ![flex-panels](/screenshots/screen05-flex-panels.png)
 
 #### 06 City or State
-
 ![city-or-state](/screenshots/screen06-city-or-state01.png)
 ![city-or-state](/screenshots/screen06-city-or-state02.png)
 
 #### 07 Arrays and Methods
-
 ![arrays-and-methods-two](/screenshots/screen07-arrays-and-methods.png)
-
 - `Array.prototype.some()`: Is at least one person 19 or older?
 - `Array.prototype.every()`: Is everyone 19 or older?
 - `Array.prototype.find()`: Find the comment with the ID of 823423
@@ -94,36 +86,28 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 - Create a new array with the updated (deleted) array
 
 #### 08 HTML5 Canvas
-
 ![html5-canvas](/screenshots/screen08-HTML5-canvas.png)
 
 #### 09 Dev Tools
-
 ![dev-tools](/screenshots/screen09-dev-tools.png)
 
 #### 10 ToDo List
-
 ![todo-list](/screenshots/screen10-todo-list.png)
 
 #### 11 Custom HTML4 Video Player
-
 ![custom-html5-video-player](/screenshots/screen11-video-player.png)
 
 #### 12 Key Sequence Detection
-
 ![key-sequence-detection](/screenshots/screen12-key-sequence01.png)
-
 [Konami Code](https://de.wikipedia.org/wiki/Konami_Code)
 ![key-sequence-detection](/screenshots/screen12-key-sequence02.png)
 [Cornify Github](https://github.com/Cornify/Cornify)
 [Cornify.com](https://www.cornify.com/)
 
 #### 13 Slide In On Scroll
-
 ![slide-in-on-scroll](/screenshots/screen13-slide-in-on-scroll.png)
 
 #### 14 Arrays and Objects
-
 ![arrays-and-objects](/screenshots/screen14-arrays-and-objects.png)
 Reference vs Copy
 #### 15 Local Storage and Event Delegation
@@ -133,3 +117,6 @@ Possible ToDo: add "select all" / "deselect all" buttons
 ![mouse-move-effect](/screenshots/screen16-shadow-mouse-move01.png)
 ![mouse-move-effect](/screenshots/screen16-shadow-mouse-move02.png)
 Be aware of the element you are targeting! This might need recalculation of cursor position!
+#### 17 Sort Without Article
+![sort-without-article](/screenshots/screen17-sort-without-article.png)
+Sort without "a", "an", "the" but keep those when listing/printing the sorted list.

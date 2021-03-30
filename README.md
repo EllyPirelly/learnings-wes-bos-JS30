@@ -50,6 +50,8 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 
 [17 - Sort Without Article](#17-sort-without-article)
 
+[18 - Add Up Times](#18-add-up-times)
+
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -120,3 +122,9 @@ Be aware of the element you are targeting! This might need recalculation of curs
 #### 17 Sort Without Article
 ![sort-without-article](/screenshots/screen17-sort-without-article.png)
 Sort without "a", "an", "the" but keep those when listing/printing the sorted list.
+#### 18 Add Up Times
+![add-up-times](/screenshots/screen18-add-up-times.png)
+- `.map()`
+- `.reduce()`
+- `Math.floor()`
+- modulo

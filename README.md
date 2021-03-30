@@ -44,6 +44,9 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 
 [14 - Arrays and Objects](#14-arrays-and-objects)
 
+[15 - Local Storage and Event Delegation](#15-local-storage-and-event-delegation)
+
+
 #### 01 Sound Kit
 
 ![sound-kit](/screenshots/screen01-sound-kit.png)
@@ -121,3 +124,6 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 
 ![arrays-and-objects](/screenshots/screen14-arrays-and-objects.png)
 Reference vs Copy
+#### 15 Local Storage and Event Delegation
+![arrays-and-objects](/screenshots/screen15-local-storage.png)
+Possible ToDo: add "select all" / "deselect all" buttons

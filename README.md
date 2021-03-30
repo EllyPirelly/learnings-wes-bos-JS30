@@ -46,6 +46,8 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 
 [15 - Local Storage and Event Delegation](#15-local-storage-and-event-delegation)
 
+[16 - CSS Text Shadow Mouse Move Effect](#16-css-text-shadow-mouse-move-effect)
+
 
 #### 01 Sound Kit
 
@@ -127,3 +129,7 @@ Reference vs Copy
 #### 15 Local Storage and Event Delegation
 ![arrays-and-objects](/screenshots/screen15-local-storage.png)
 Possible ToDo: add "select all" / "deselect all" buttons
+#### 16 CSS Text Shadow Mouse Move Effect
+![mouse-move-effect](/screenshots/screen16-shadow-mouse-move01.png)
+![mouse-move-effect](/screenshots/screen16-shadow-mouse-move02.png)
+Be aware of the element you are targeting! This might need recalculation of cursor position!

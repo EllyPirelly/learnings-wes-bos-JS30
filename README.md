@@ -56,6 +56,8 @@ Heads up: the majority of the examples don't have build processes unless stated 
 
 [20 - Speech Detection](#20-speech-detection)
 
+[21 - Geolocation Speedometer Compass](#21-geolocation-speedometer-compass)
+
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -158,3 +160,12 @@ how to:
 heads-up:
 - make sure you're only detecting for speech in ONE browser window/tab
 - even then, in my case my recognition froze after a few sentences (with browsersync and 'native' Visual Studio Code Live Server) and I had to either stop/start browsersync and/or hard reload the browser window again
+#### 21 Geolocation Speedometer Compass
+![geoloc-speedometer-compass](/screenshots/screen21-geolocation.png)
+how to:
+- what is desired to be shown is how many degrees of north a person is (with the compass) and the speed at which somebody is moving (in km/h)
+- in Wes Bos course he has this running via live server/browsersync, so if you copy this code, run `npm install`, then `npm start`
+- you need to give access to your location to use this feature
+- as on Chrome we can fake geolocation coordinates but cannot fake geolocation heading and geolocation speed, this is supposed to grab heading and speed data given by Chrome and work with that
+- this is intended to be developped with Xcode via simulation of another device (e.g., iPhone11) (I've sit this one out as I would have to update Xcode but wanted to make progress)
+- for this after firing up `npm start` you'd need to copy the external URL shown into the browwer or the simulated device on Xcode

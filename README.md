@@ -8,7 +8,7 @@
 
 ### How to run this?
 
-Heads up: this repo doesn't have build processes - only simple HTML, CSS and JavaScript files
+Heads up: the majority of the examples don't have build processes unless stated otherwise - only simple HTML, CSS and JavaScript files
 
 - clone this project
 - cd into the part of the project you want to throw on localhost
@@ -53,6 +53,8 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 [18 - Add Up Times](#18-add-up-times)
 
 [19 - Webcam Fun](#19-webcam-fun)
+
+[20 - Speech Detection](#20-speech-detection)
 
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
@@ -145,3 +147,14 @@ how to:
 - check `index.js`, here `setInterval()`, to un/comment desired effect
 - download image you've screenshot
 - sliders only work on green screen effect
+
+#### 20 Speech Detection
+![speech-detection](/screenshots/screen20-speech-detection.png)
+how to:
+- in Wes Bos course he has this running via live server/browsersync, so if you copy this code, run `npm install`, then `npm start`
+- you need to give access to your microphone to use this feature
+- for every started/stopped spoken sentence, a new `<p></p>` is going to be created and filled
+
+heads-up:
+- make sure you're only detecting for speech in ONE browser window/tab
+- even then, in my case my recognition froze after a few sentences (with browsersync and 'native' Visual Studio Code Live Server) and I had to either stop/start browsersync and/or hard reload the browser window again

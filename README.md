@@ -58,6 +58,8 @@ Heads up: the majority of the examples don't have build processes unless stated 
 
 [21 - Geolocation Speedometer Compass](#21-geolocation-speedometer-compass)
 
+[22 - Follow Along Link](#22-follow-along-link)
+
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -169,3 +171,7 @@ how to:
 - as on Chrome we can fake geolocation coordinates but cannot fake geolocation heading and geolocation speed, this is supposed to grab heading and speed data given by Chrome and work with that
 - this is intended to be developped with Xcode via simulation of another device (e.g., iPhone11) (I've sit this one out as I would have to update Xcode but wanted to make progress)
 - for this after firing up `npm start` you'd need to copy the external URL shown into the browwer or the simulated device on Xcode
+#### 22 Follow Along Link
+![follow-along-link](/screenshots/screen22-follow-along-link.gif)
+- what is desired to be shown is when hovering with mouse over the whole page, have the links having an animated hover effect that follows while moving along
+- apparently this will be the basis for a later course with an extended menu

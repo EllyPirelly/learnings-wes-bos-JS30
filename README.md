@@ -52,6 +52,8 @@ Heads up: this repo doesn't have build processes - only simple HTML, CSS and Jav
 
 [18 - Add Up Times](#18-add-up-times)
 
+[19 - Webcam Fun](#19-webcam-fun)
+
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -128,3 +130,18 @@ Sort without "a", "an", "the" but keep those when listing/printing the sorted li
 - `.reduce()`
 - `Math.floor()`
 - modulo
+#### 19 Webcam Fun
+![webcam-fun](/screenshots/screen19-webcam-fun01.png)
+![webcam-fun](/screenshots/screen19-webcam-fun02.png)
+![webcam-fun](/screenshots/screen19-webcam-fun03.png)
+- heads-up: my code is different from Wes Bos'
+
+how to:
+- optimized for desktop
+- in Wes Bos course he has this running via live server/browsersync, so if you copy this code, run `npm install`, then `npm start`
+- you need to give access to your camera to use this feature
+- live camera footage will be grabbed, drawn on canvas, colors manipulated
+- chose between three effects: rgb effect, red effect, green screen
+- check `index.js`, here `setInterval()`, to un/comment desired effect
+- download image you've screenshot
+- sliders only work on green screen effect

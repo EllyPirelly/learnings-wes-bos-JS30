@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19 | Webcam Fun</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="photobooth">
+
+        <div class="controls">
+            <div class="player-miniature">
+                <div class="player-miniature-text">Camera miniature:</div>
+                <video class="player-grab-live"></video>
+                <button onClick="takePhoto()" class="take-photo">Click for photo/s of live cam</button>
+            </div>
+
+            <div class="rgb">
+                <div class="red-range">
+                    <div class="red-min">
+                        <label for="rmin">Red Min:</label>
+                        <input type="range" min=0 max=255 name="rmin">
+                    </div>
+                    <div class="red-max">
+                        <label for="rmax">Red Max:</label>
+                        <input type="range" min=0 max=255 name="rmax">
+                    </div>
+                </div>
+
+                <div class="green-range">
+                    <div class="green-min">
+                        <label for="gmin">Green Min:</label>
+                        <input type="range" min=0 max=255 name="gmin">
+                    </div>
+                    <div class="green-max">
+                        <label for="gmax">Green Max:</label>
+                        <input type="range" min=0 max=255 name="gmax">
+                    </div>
+                </div>
+
+                <div class="blue-range">
+                    <div class="blue-min">
+                        <label for="bmin">Blue Min:</label>
+                        <input type="range" min=0 max=255 name="bmin">
+                    </div>
+                    <div class="blue-max">
+                        <label for="bmax">Blue Max:</label>
+                        <input type="range" min=0 max=255 name="bmax">
+                    </div>
+                </div>
+                <span>*Sliders above are for Green Screen manipulation</span>
+            </div>
+        </div>
+
+        <div class="player-wrapper">
+            <canvas class="photo"></canvas>
+            <div class="strip">
+            </div>
+        </div>
+
+    </div>
+
+    <audio class="snap" src="./snap.mp3" hidden></audio>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

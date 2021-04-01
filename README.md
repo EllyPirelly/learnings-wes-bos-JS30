@@ -66,6 +66,8 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 [23 - Speech Synthesis](#23-speech-synthesis)
 
 [24 - Sticky Nav](#24-sticky-nav)
+
+[25 - Event Capture, Bubbling, Propagation, Once](#25-event-capture-bubbling-propagation-once)
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -193,3 +195,12 @@ how to:
 - a sticky nav that snaps after scrolling past header image
 - little transition while sliding in the 'LOST'
 - programmatic calculation of nav position while scrolling
+
+#### 25 Event Capture, Bubbling, Propagation, Once
+![event-capture](/screenshots/screen25-event-capture.png)
+- example: three nested `<div>`s, event listener 'click' on each one of them
+- consider while using `addEventListener` what's being fired when!
+- `capture`: goes from top to bottom, no event being fired, only captures where you click, then starts at the botton and will bubble up the event
+- `bubbling`: click on the innermost element will also trigger the outer parent element
+- `stopPropagation()`: stops bubbling up the event
+- `once: true`: listens for the event once and unbinds itself; use for example in store checkouts when you don't want and need a customer clicking (submitting) a button multiple times - see `<button>` element

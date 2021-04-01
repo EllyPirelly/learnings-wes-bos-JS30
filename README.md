@@ -2,16 +2,19 @@
 
 ### What is this about?
 
-- codealong to [Wes Bos JavaScript30](https://javascript30.com/) course, which is a free course - the only thing you have to do is sign up
-- see more of [his courses here](https://wesbos.com/courses)
-- I've decided to collect all of the small code snippets in my own repro, seperated into HTML, CSS and JavaScript files
+- codealong to [Wes Bos JavaScript30](https://javascript30.com/) course, which is a free course - the only thing you have to do is sign up via email
+- see more of [his courses on wesbos.com](https://wesbos.com/courses)
+- see [Wes Bos JavaScript30 on GitHub](https://github.com/wesbos/JavaScript30) here
+- most of Wes Bos lessons are desktop first, a ToDo could be to make (if possible) all of them responsive
+- this repo here is my small codealong code snippets, seperated into HTML, CSS and JavaScript files
+- down below I've included screenshots of single course code to give a visual representation of what to expect from single courses
 
 ### How to run this?
 
-Heads up: the majority of the examples don't have build processes unless stated otherwise - only simple HTML, CSS and JavaScript files
+Heads up: unless stated otherwise, the majority of my code examples don't have build processes - only simple HTML, CSS and JavaScript files
 
-- clone this project
-- cd into the part of the project you want to throw on localhost
+- clone this whole repo or copy and paste code of a single project
+- cd into the project you want to throw on localhost
 - open `index.html` in your browser of choice (in my case, built in/for Chrome)
 
 ### Course Content
@@ -60,6 +63,7 @@ Heads up: the majority of the examples don't have build processes unless stated 
 
 [22 - Follow Along Link](#22-follow-along-link)
 
+[23 - Speech Synthesis](#23-speech-synthesis)
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -140,10 +144,9 @@ Sort without "a", "an", "the" but keep those when listing/printing the sorted li
 ![webcam-fun](/screenshots/screen19-webcam-fun01.png)
 ![webcam-fun](/screenshots/screen19-webcam-fun02.png)
 ![webcam-fun](/screenshots/screen19-webcam-fun03.png)
-- heads-up: my code is different from Wes Bos'
+- heads-up: my code is different from Wes Bos
 
 how to:
-- optimized for desktop
 - in Wes Bos course he has this running via live server/browsersync, so if you copy this code, run `npm install`, then `npm start`
 - you need to give access to your camera to use this feature
 - live camera footage will be grabbed, drawn on canvas, colors manipulated
@@ -157,11 +160,11 @@ how to:
 how to:
 - in Wes Bos course he has this running via live server/browsersync, so if you copy this code, run `npm install`, then `npm start`
 - you need to give access to your microphone to use this feature
-- for every started/stopped spoken sentence, a new `<p></p>` is going to be created and filled
+- for every started/stopped spoken sentence, a new `<p></p>` is going to be created and filled with detected words
 
 heads-up:
 - make sure you're only detecting for speech in ONE browser window/tab
-- even then, in my case my recognition froze after a few sentences (with browsersync and 'native' Visual Studio Code Live Server) and I had to either stop/start browsersync and/or hard reload the browser window again
+- even then, in my case my recognition froze after a few spoken words (both, with browsersync and 'native' Visual Studio Code Live Server) and I had to either stop/start browsersync and/or hard reload the browser window
 #### 21 Geolocation Speedometer Compass
 ![geoloc-speedometer-compass](/screenshots/screen21-geolocation.png)
 how to:
@@ -169,9 +172,15 @@ how to:
 - in Wes Bos course he has this running via live server/browsersync, so if you copy this code, run `npm install`, then `npm start`
 - you need to give access to your location to use this feature
 - as on Chrome we can fake geolocation coordinates but cannot fake geolocation heading and geolocation speed, this is supposed to grab heading and speed data given by Chrome and work with that
-- this is intended to be developped with Xcode via simulation of another device (e.g., iPhone11) (I've sit this one out as I would have to update Xcode but wanted to make progress)
-- for this after firing up `npm start` you'd need to copy the external URL shown into the browwer or the simulated device on Xcode
+- this is intended to be developped with Xcode via simulation of another device (e.g., iPhone11) (I've sat this one out)
+- for this after firing up `npm start` you'd need to copy the external URL shown in your terminal into the browwer of the simulated device on Xcode
 #### 22 Follow Along Link
 ![follow-along-link](/screenshots/screen22-follow-along-link.gif)
-- what is desired to be shown is when hovering with mouse over the whole page, have the links having an animated hover effect that follows while moving along
-- apparently this will be the basis for a later course with an extended menu
+- what is desired to be shown is when hovering with mouse over the whole page, have the links having an animated hover effect that follows (with a little bit of delay) while moving along
+
+#### 23 Speech Synthesis
+![speech-synthesis](/screenshots/screen23-speech-synthesis.png)
+- give typed in text a voice
+- SpeechSynthesis Web Speach API (experimental feature)
+- limit selectable voices to `'en'``
+- manipulate speed and pitch of spoken words/voice

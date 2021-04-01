@@ -68,6 +68,8 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 [24 - Sticky Nav](#24-sticky-nav)
 
 [25 - Event Capture, Bubbling, Propagation, Once](#25-event-capture-bubbling-propagation-once)
+
+[26 - Animated Follow Along Nav](#26-animated-follow-along-nav)
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -204,3 +206,7 @@ how to:
 - `bubbling`: click on the innermost element will also trigger the outer parent element
 - `stopPropagation()`: stops bubbling up the event
 - `once: true`: listens for the event once and unbinds itself; use for example in store checkouts when you don't want and need a customer clicking (submitting) a button multiple times - see `<button>` element
+
+#### 26 Animated Follow Along Nav
+![animated-follow-along-nav](/screenshots/screen26-follow-along-nav01.png)
+![animated-follow-along-nav](/screenshots/screen26-follow-along-nav02.gif)

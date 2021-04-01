@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26 | Follow Along Nav</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h3>h3 placed here to demonstrate what happens if you add another element</h3>
+    <nav class="top">
+        <div class="dropdownBackground">
+            <span class="arrow"></span>
+        </div>
+
+        <ul class="cool">
+            <li>
+                <a href="#">About Me</a>
+                <div class="dropdown dropdown1">
+                    <div class="bio">
+                        <img src="./ellvatar.png">
+                        <p>EllyPirelly. Frontend Engineer. Berlin.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#">Code</a>
+                <ul class="dropdown courses">
+                    <li>
+                        <span class="code">GitHub</span>
+                        <a href="https://github.com/EllyPirelly/learnings-wes-bos-JS30">Learnings Wes Bos JS30</a>
+                    </li>
+                    <li>
+                        <span class="code">GitHub</span>
+                        <a href="https://github.com/EllyPirelly/project-privacy-dialog">Privacy Dialog</a>
+                    </li>
+                    <li>
+                        <span class="code">GitHub</span>
+                        <a href="https://github.com/EllyPirelly/project-gatsby-blog">Gatsby Blog</a>
+                    </li>
+                    <li>
+                        <span class="code">GitHub</span>
+                        <a href="https://github.com/EllyPirelly/project-flexbox-grid-page-layout">Frontendmasters:
+                            Flexbox / Grid Layout</a>
+                    </li>
+                    <li>
+                        <span class="code">CodePen</span>
+                        <a href="https://codepen.io/ellypirelly/pen/YzpYRdv">Perfect Toggle Button</a>
+                    </li>
+                    <li>
+                        <span class="code">CodePen</span>
+                        <a href="https://codepen.io/ellypirelly/pen/BaQQeqR">Click + Toggle</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Other Links</a>
+                <ul class="dropdown dropdown3">
+                    <li><a class="button twitter" href="#">Twitter</a></li>
+                    <li><a class="button facebook" href="#">Facebook</a></li>
+                    <li><a class="button medium" href="#">Medium</a></li>
+                    <li><a class="button instagram" href="#">Instagram</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

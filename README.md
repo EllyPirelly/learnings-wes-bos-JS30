@@ -64,6 +64,8 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 [22 - Follow Along Link](#22-follow-along-link)
 
 [23 - Speech Synthesis](#23-speech-synthesis)
+
+[24 - Sticky Nav](#24-sticky-nav)
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -184,3 +186,10 @@ how to:
 - SpeechSynthesis Web Speach API (experimental feature)
 - limit selectable voices to `'en'``
 - manipulate speed and pitch of spoken words/voice
+
+#### 24 Sticky Nav
+![sticky-nav](/screenshots/screen24-sticky-nav01.png)
+![sticky-nav](/screenshots/screen24-sticky-nav02.png)
+- a sticky nav that snaps after scrolling past header image
+- little transition while sliding in the 'LOST'
+- programmatic calculation of nav position while scrolling

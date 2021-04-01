@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    color: #282828;
+    font-family: "helvetica neue", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.snapped-nav nav {
+    box-shadow: 0 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+}
+
+.snapped-nav li.logo {
+    max-width: 500px;
+}
+
+/* .snapped-nav .site-wrap {
+    transform: scale(1);
+} */
+
+header {
+    align-items: center;
+    background: url(https://source.unsplash.com/GKN6rpDr0EI/960x640) bottom center no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 30vh;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 3px 4px 0 rgba(0, 0, 0, 0.2);
+    font-size: 7vw;
+}
+
+nav {
+    background: #282828;
+    top: 0;
+    transition: all 0.5s;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+
+li.logo {
+    background: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    max-width: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+li.logo a {
+    color: #282828;
+}
+
+.site-wrap {
+    background: #fff;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    max-width: 700px;
+    margin: 70px auto;
+    padding: 30px 40px;
+    text-align: justify;
+    /* transform: scale(0.98); */
+    transition: transform 0.5s;
+}
+
+p {
+    margin: 1em 0;
+}

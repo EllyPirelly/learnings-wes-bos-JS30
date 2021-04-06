@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5dbb3;
+    color: #282828;
+    font-family: "Amatic SC", cursive;
+    font-size: 10px;
+    padding: 32px;
+}
+
+h1 {
+    font-size: 8em;
+    line-height: 1;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+button {
+    border-radius: 6px;
+    display: block;
+    font-size: 18px;
+    margin: 24px auto 0 auto;
+    padding: 12px;
+}
+
+.score {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    padding: 0 3rem;
+    line-height: 1;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    margin: 0 auto;
+    width: 600px;
+}
+
+.hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.hole:after {
+    background: url(dirt.svg) bottom center no-repeat;
+    background-size: contain;
+    bottom: -30px;
+    content: "";
+    display: block;
+    height: 70px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.mole {
+    background: url("mole.svg") bottom center no-repeat;
+    background-size: 60%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    transition: all 0.4s;
+    width: 100%;
+}
+
+.hole.up .mole {
+    top: 0;
+}

@@ -5,6 +5,7 @@
 - codealong to [Wes Bos JavaScript30](https://javascript30.com/) course, which is a free course - the only thing you have to do is sign up via email
 - see more of [his courses on wesbos.com](https://wesbos.com/courses)
 - see [Wes Bos JavaScript30 on GitHub](https://github.com/wesbos/JavaScript30) here
+- see [transcripts](https://github.com/wesbos/Wes-Bos-Captions/tree/master/JS3) here
 - most of Wes Bos lessons are desktop first, a ToDo could be to make (if possible) all of them responsive
 - this repo here is my small codealong code snippets, seperated into HTML, CSS and JavaScript files
 - down below I've included screenshots of single course code to give a visual representation of what to expect from single courses
@@ -76,6 +77,8 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 [28 - Video Speed Controller](#28-video-speed-controller)
 
 [29 - Countdown Timer](#29-countdown-timer)
+
+[30 - Whack-A-Mole](#30-whack-a-mole)
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -239,3 +242,9 @@ how to:
     - 60 minutes
     - customised entered minutes
 - displays how much time is left
+
+#### 30 Whack-A-Mole
+![whack-a-mole](/screenshots/screen30-whack-a-mole.png)
+- bonk 6 moles when they pop up
+- runs for 10 seconds after start has been clicked
+- count the hits on a score board

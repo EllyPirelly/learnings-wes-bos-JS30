@@ -72,6 +72,8 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 [26 - Animated Follow Along Nav](#26-animated-follow-along-nav)
 
 [27 - Leporello Click and Drag Slider](#27-leporello-click-and-drag-slider)
+
+[28 - Video Speed Controller](#28-video-speed-controller)
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -219,3 +221,8 @@ how to:
 #### 27 Leporello Click and Drag Slider
 ![leporello-click-and-drag](/screenshots/screen27-leporello-slider.gif)
 - left/right click and dragable slider with (calculated) mouse actions `mousedown`, `mouseleave`, `mouseup` and `mousemove`
+
+#### 28 Video Speed Controller
+![video-speed-controller](/screenshots/screen28-video-speed-controller.png
+)
+- control scrubber, control speed as video is playing

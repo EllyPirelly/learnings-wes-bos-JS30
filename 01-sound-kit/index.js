@@ -1,7 +1,7 @@
 function playSound(e) {
   // select the audio element
   const audio = document.querySelector(`audio[data-key='${e.keyCode}']`)
-  // select something with the class of key
+  // select elements of class key
   const key = document.querySelector(`.key[data-key='${e.keyCode}']`)
   // if there's "no audio on a key", stop function
   if (!audio) return

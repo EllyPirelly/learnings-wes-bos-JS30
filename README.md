@@ -81,12 +81,22 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 [30 - Whack-A-Mole](#30-whack-a-mole)
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
+- grab keyCodes that are asscociated with the keys displayed here
+- [keycode.info](http://keycode.info/)
+- listen to `keydown` event
+- if there's corresponding audio, play audio on keydown
+- along a bit of transformation (via CSS)
 
 #### 02 Clock
 ![clock](/screenshots/screen02-clock.png)
-
+- grab current time
+- update hands accordingly (seconds, minutes, hour)
+- along a bit of transition (some via CSS, some via JavaScript)
 #### 03 Update CSS Variables
 ![update-css-variables](/screenshots/screen03-update-css-vars.png)
+- 3 `<input>`, 2 of them of the type `range`, 1 of them of the type `color`
+- via JavaScript, manipulate default set CSS variables `--base`, `--blur` and `--spacing`
+- event listener for `change` and `mousemove`, will be triggered regardless of which one happened
 
 #### 04 Arrays and Methods
 ![arrays-and-methods-one](/screenshots/screen04-arrays-and-methods.png)
@@ -101,7 +111,10 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 
 #### 05 Flex Panels
 ![flex-panels](/screenshots/screen05-flex-panels.png)
-
+- most things are done with CSS here (Flexbox, transitions, translates)
+- if clicking on one panel, said panel will grow in size and show additional text coming in from the top and the bottom (via `translateY()`)
+- if all panels are clicked, all of them will show the whole texts
+- JavaScript only needed to toggle associated classes
 #### 06 City or State
 ![city-or-state](/screenshots/screen06-city-or-state01.png)
 ![city-or-state](/screenshots/screen06-city-or-state02.png)

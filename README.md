@@ -74,6 +74,8 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 [27 - Leporello Click and Drag Slider](#27-leporello-click-and-drag-slider)
 
 [28 - Video Speed Controller](#28-video-speed-controller)
+
+[29 - Countdown Timer](#29-countdown-timer)
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -226,3 +228,14 @@ how to:
 ![video-speed-controller](/screenshots/screen28-video-speed-controller.png
 )
 - control scrubber, control speed as video is playing
+
+#### 29 Countdown Timer
+![countdown-timer](/screenshots/screen29-countdown-timer.png)
+- timer with 6 options:
+    - 20 seconds
+    - 5 minutes
+    - 15 minutes
+    - 20 minutes
+    - 60 minutes
+    - customised entered minutes
+- displays how much time is left

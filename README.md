@@ -70,6 +70,8 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 [25 - Event Capture, Bubbling, Propagation, Once](#25-event-capture-bubbling-propagation-once)
 
 [26 - Animated Follow Along Nav](#26-animated-follow-along-nav)
+
+[27 - Leporello Click and Drag Slider](#27-leporello-click-and-drag-slider)
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 
@@ -210,3 +212,10 @@ how to:
 #### 26 Animated Follow Along Nav
 ![animated-follow-along-nav](/screenshots/screen26-follow-along-nav01.png)
 ![animated-follow-along-nav](/screenshots/screen26-follow-along-nav02.gif)
+- expanding nav on hover (transforming background of nav, adapting width and height automatically)
+- top level `<li>`s will be triggered
+- most of this can be done with CSS BUT here it's calculated how big the `ul class="dropdown"` container is and how to have the white background behind it
+
+#### 27 Leporello Click and Drag Slider
+![leporello-click-and-drag](/screenshots/screen27-leporello-slider.gif)
+- left/right click and dragable slider with (calculated) mouse actions `mousedown`, `mouseleave`, `mouseup` and `mousemove`

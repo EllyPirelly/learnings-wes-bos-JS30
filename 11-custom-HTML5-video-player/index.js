@@ -1,4 +1,4 @@
-// get our elements
+// get all needed elements
 const player = document.querySelector('.player')
 const video = player.querySelector('.viewer')
 const progress = player.querySelector('.progress')
@@ -7,27 +7,23 @@ const toggle = player.querySelector('.toggle')
 const skipButtons = player.querySelectorAll('[data-skip]')
 const ranges = player.querySelectorAll('.player__slider')
 
-// build our funtions
+// toggle play, either calling play or pause on the video
 function togglePlay() {
-  // either calling play or pause
-  /* if (video.paused) {
-      video.play()
-    } else {
-        video.pause()
-    } */
-  const method = video.paused ? 'play' : 'pause'
-  video[method]()
+    // heads-up: 'video' only has a 'paused' property, NOT a 'played' property on it
+    const method = video.paused ? 'play' : 'pause'
+    video[method]()
 }
 
-// listen to the video/event, whenever it is paused, update button
+// listen to the video/event, whenever it is paused, update button image
 function updateButton() {
   const icon = this.paused ? '►' : '❚ ❚'
   toggle.textContent = icon
-  // console.log(icon)
 }
 
+// skip button
 function skip() {
   // console.log(this.dataset.skip)
+  // gets a string so wrap into parseFloat to convert to number
   video.currentTime += parseFloat(this.dataset.skip)
 }
 
@@ -37,16 +33,18 @@ function handleRangeUpdate() {
   video[this.name] = this.value
 }
 
+// progress
 function handleProgress() {
   // updating the flex-basis value in css / in percentage
   const percent = (video.currentTime / video.duration) * 100
   progressBar.style.flexBasis = `${percent}%`
 }
 
+// progress bar
 function scrub(e) {
   const scrubTime = (e.offsetX / progress.offsetWidth) * video.duration
   video.currentTime = scrubTime
-  console.log(e)
+  // console.log(e)
 }
 
 // hook up the event listeners
@@ -55,23 +53,19 @@ video.addEventListener('play', updateButton)
 video.addEventListener('pause', updateButton)
 // listen to the video emitting an update
 video.addEventListener('timeupdate', handleProgress)
-
 toggle.addEventListener('click', togglePlay)
 
 skipButtons.forEach((button) => button.addEventListener('click', skip))
 
 ranges.forEach((range) => range.addEventListener('change', handleRangeUpdate))
+// will fire regardless of a click
 ranges.forEach((range) =>
   range.addEventListener('mousemove', handleRangeUpdate)
 )
 
 progress.addEventListener('click', scrub)
 let mousedown = false
-/* progress.addEventListener('mousemove', () => {
-    if(mousedown) {
-        scrub
-    }
-}) */
+// if mousedown is true it will run scrub, otherwise return
 progress.addEventListener('mousemove', (e) => mousedown && scrub(e))
 progress.addEventListener('mousedown', () => (mousedown = true))
 progress.addEventListener('mouseup', () => (mousedown = false))

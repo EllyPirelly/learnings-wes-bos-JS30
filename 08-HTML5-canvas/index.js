@@ -1,4 +1,6 @@
+// grab canvas
 const canvas = document.querySelector('#draw')
+// define context (where the drawing will happen)
 const ctx = canvas.getContext('2d')
 
 canvas.width = window.innerWidth
@@ -8,43 +10,48 @@ ctx.lineJoin = 'round'
 ctx.lineCap = 'round'
 ctx.lineWidth = 50
 // blending effect:
-// ctx.globalCompositeOperation = 'multiply';
+/* ctx.globalCompositeOperation = 'multiply'; */
 
-// goal is to only draw when the mouse is down, so this is a flag we create
+// only draw when the mouse is down (= flag)
 let isDrawing = false
-// we need a starting and ending x and y
+// last points of drawing of x and y
 let lastX = 0
 let lastY = 0
 let hue = 0
 let direction = true
 
-// is going to be called at mousemove
+// called at mousemove
 function draw(event) {
   // stop the function from running when not mousedown
   if (!isDrawing) return
+  // color
   ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`
   // start a path
   ctx.beginPath()
-  // start from
+  // move to
   ctx.moveTo(lastX, lastY)
-  // go to
+  // line to
   ctx.lineTo(event.offsetX, event.offsetY)
   // update coordinates
   lastX = event.offsetX
   lastY = event.offsetY
-  // [lastX, lastY] = [event.offsetX, event.offsetY];
+  // or, as one liner:
+  /* [lastX, lastY] = [event.offsetX, event.offsetY]; */
   // paint
   ctx.stroke()
 
+  // increment/reset hue (color)
   hue++
   if (hue >= 360) {
     hue = 0
   }
 
+  // linewidth: greater than 100, flip direction / less than 1, flip direction
   if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
     direction = !direction
   }
 
+  // increment/decrement linewidth
   if (direction) {
     ctx.lineWidth++
   } else {
@@ -54,7 +61,7 @@ function draw(event) {
 
 canvas.addEventListener('mousedown', () => {
   isDrawing = true
-  // update lastX, lastY, otherwise we would start at 0, 0 again
+  // update lastX, lastY, otherwise we would always start at 0, 0 again
   ;[lastX, lastY] = [event.offsetX, event.offsetY]
 })
 

@@ -7,7 +7,7 @@
 body {
     background-color: #f5dbb3;
     color: #282828;
-    font-family: 'helvetica neue', sans-serif;
+    font-family: "helvetica neue", sans-serif;
     font-weight: 100;
     font-size: 50px;
     padding: 24px;
@@ -20,4 +20,8 @@ body {
     line-height: 32px;
     padding: 0 34px;
     text-align: left;
+}
+
+p {
+    font-size: 36px;
 }

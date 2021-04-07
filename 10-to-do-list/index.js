@@ -2,33 +2,36 @@
 const checkboxes = document.querySelectorAll('.inbox [type="checkbox"]')
 // console.log({checkboxes});
 
-// listen to if one of them gets clicked or changed
-checkboxes.forEach((checkbox) =>
-  checkbox.addEventListener('click', handleCheck)
-)
-
 let lastChecked
 
 function handleCheck(event) {
-  // flag variable
-  let inBetween = false
-  // check if shift key down AND checked (not unchecked)
-  if (event.shiftKey && this.checked) {
-    // loop over every single checkbox
-    // look for the first one that was checked
-    checkboxes.forEach((checkbox) => {
-      // console.log(checkbox);
-      // works both ways top to bottom, bottom to top
-      if (checkbox === this || checkbox === lastChecked) {
-        inBetween = !inBetween
-        // console.log('Starting to check them inbetween');
-      }
+    // flag variable, as soon as first one is checked = true
+    let inBetween = false
 
-      if (inBetween) {
-        checkbox.checked = true
-      }
-    })
-  }
+    // check if shift key down AND checked
+    if (event.shiftKey && this.checked) {
 
-  lastChecked = this
+        // loop over every single checkbox
+        // look for the first one that was checked
+        checkboxes.forEach((checkbox) => {
+
+            // works both ways top to bottom, bottom to top
+            // 'this' is the checked checkbox
+            if (checkbox === this || checkbox === lastChecked) {
+                inBetween = !inBetween
+            }
+
+            // in between two checked checkboxes
+            if (inBetween) {
+                checkbox.checked = true
+            }
+        })
+    }
+
+    lastChecked = this
 }
+
+// loop over all checkboxes, listen for click
+checkboxes.forEach((checkbox) =>
+    checkbox.addEventListener('click', handleCheck)
+)

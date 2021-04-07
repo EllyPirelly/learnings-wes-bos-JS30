@@ -8,7 +8,7 @@
 - see [transcripts](https://github.com/wesbos/Wes-Bos-Captions/tree/master/JS3) here
 - most of Wes Bos lessons are desktop first, a ToDo could be to make (if possible) all of them responsive
 - this repo here is my small codealong code snippets, seperated into HTML, CSS and JavaScript files
-- down below I've included screenshots of single course code to give a visual representation of what to expect from single courses
+- down below I've included screenshots of single course projects, to give a visual representation
 
 ### How to run this?
 
@@ -40,7 +40,7 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 
 [10 - ToDo List](#10-todo-list)
 
-[11 - Custom HTML4 Video Player](#11-custom-html5-video-player)
+[11 - Custom HTML5 Video Player](#11-custom-html5-video-player)
 
 [12 - Key Sequence Detection](#12-key-sequence-detection)
 
@@ -79,6 +79,7 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 [29 - Countdown Timer](#29-countdown-timer)
 
 [30 - Whack-A-Mole](#30-whack-a-mole)
+
 #### 01 Sound Kit
 ![sound-kit](/screenshots/screen01-sound-kit.png)
 - grab keyCodes that are asscociated with the keys displayed here
@@ -92,6 +93,7 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 - grab current time
 - update hands accordingly (seconds, minutes, hour)
 - along a bit of transition (some via CSS, some via JavaScript)
+
 #### 03 Update CSS Variables
 ![update-css-variables](/screenshots/screen03-update-css-vars.png)
 - 3 `<input>`, 2 of them of the type `range`, 1 of them of the type `color`
@@ -113,11 +115,16 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 ![flex-panels](/screenshots/screen05-flex-panels.png)
 - most things are done with CSS here (Flexbox, transitions, translates)
 - if clicking on one panel, said panel will grow in size and show additional text coming in from the top and the bottom (via `translateY()`)
-- if all panels are clicked, all of them will show the whole texts
-- JavaScript only needed to toggle associated classes
+- if all panels are clicked, all of them will show the whole texts, available space will be distributed evenly
+- JavaScript is only needed to toggle associated classes
+
 #### 06 City or State
 ![city-or-state](/screenshots/screen06-city-or-state01.png)
 ![city-or-state](/screenshots/screen06-city-or-state02.png)
+- fetch and filter data (US cities and US states) from external `.json` file link, distributed by Wes Bos
+- filter / search for within that list of cities and states
+- all matching cities and states will be shown while typing ahead in search field
+- results (if any) will be rendered as `innerHTML`s and - through adding a CSS class - will be highlighted while typing
 
 #### 07 Arrays and Methods
 ![arrays-and-methods-two](/screenshots/screen07-arrays-and-methods.png)
@@ -129,45 +136,109 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 
 #### 08 HTML5 Canvas
 ![html5-canvas](/screenshots/screen08-HTML5-canvas.png)
+- enable drawing on HTML5 element `<canvas>` - that said, drawing will happen on `context` in 2d - via click and drag
+- listen for `mousedown`, `mousemove`, `mouseup`, `mouseout`
+- within the draw function, using some options we have on the `context` regarding color, linewidth etc
 
 #### 09 Dev Tools
 ![dev-tools](/screenshots/screen09-dev-tools.png)
+- this tutorial is about what you can log in the console
+    - `console.log('hello');`
+    - `console.warn('WARN');`
+    - `console.error('Display error here');`
+    - `console.info('Only Information-Text here');`
+    - `console.clear();`
+    - `console.time();`
+    - `console.count();`
+    - `console.table();`
+- interpolated `%s` - will pass the second parameter into the first parameter
+    - `console.log('I am: %s‘, ‚a fool');`
+- styled `%c`
+    - `console.log('%c I am some great text', 'font-size: 25px; background: yellow;');`
 
 #### 10 ToDo List
 ![todo-list](/screenshots/screen10-todo-list.png)
+- click a checkbox, hold down shift key, click another checkbox - automatically also mark all of the checkboxes inbetween
+- works top to bottoema and bottom to top
+- listen on `click` event on all checkboxes
+- check for shift key being down AND checked
 
-#### 11 Custom HTML4 Video Player
+#### 11 Custom HTML5 Video Player
 ![custom-html5-video-player](/screenshots/screen11-video-player.png)
+- customize the default HTML5 video player controls (in my case, on Chrome)
+- hide those panels and build our own based on our own HTML
+    - play / pause button
+    - volume slider
+    - speed of video slider
+    - skip buttons (10 seconds back / 25 seconds forward)
+    - progress bar (dragable, showing where we're at)
+- listen to
+    - `click`, `play`, `pause`, `timeupdate`, `change`, `mousemove`, `mousedown`, `mouseup`
+- possible ToDo: implement full screen button
 
 #### 12 Key Sequence Detection
 ![key-sequence-detection](/screenshots/screen12-key-sequence01.png)
-[Konami Code](https://de.wikipedia.org/wiki/Konami_Code)
+- when someone inputs a certain sequence of keys, then something needs to happen / something is triggered, e.g. an easter egg
+- most used online: [Konami Code](https://de.wikipedia.org/wiki/Konami_Code)
 ![key-sequence-detection](/screenshots/screen12-key-sequence02.png)
-[Cornify Github](https://github.com/Cornify/Cornify)
-[Cornify.com](https://www.cornify.com/)
+- type **coffee**, this will trigger `cornify_add()`
+- see [Cornify Github](https://github.com/Cornify/Cornify)
+- see [Cornify.com](https://www.cornify.com/)
+- listen to `keyup` event on window
+- `splice`
 
 #### 13 Slide In On Scroll
 ![slide-in-on-scroll](/screenshots/screen13-slide-in-on-scroll.png)
+##### "Make sure to debounce your scoll functions! Performance!"
+- when scrolling down a page, have images slide in from left/right at half-scolled passed image height
+- images are hidden by default via CSS (`translate()`, `opacity: 0`)
+- listen on `scroll` event
+- implement debounce function, as having event listener on scroll is not performative - the implemented function will only run the `checkSlide()` function every 20 milliseconds
 
 #### 14 Arrays and Objects
 ![arrays-and-objects](/screenshots/screen14-arrays-and-objects.png)
-Reference vs Copy
+- Reference vs Copy
+- strings, numbers, booleans: if you reassign a variable and afterwards change the value of the original variable, the original variable value will change but NOT the reassigned one
+- **array reference:** if you update an array it will always reference back; reference example is NOT a copied array, it's just a reference to the original array, so BOTH of them will be updated!
+- **array copy options:**
+    - `exisitingArray.slice()`
+    - concatenate an existing array into an empty array `[].concat(existingArray)`
+    - ES6 spread `[...existingArray]`
+    - `Array.from(existingArray)
+- **object reference:** if you update an object it will always reference back; reference example is NOT a copied object, it’s just a reference to the original object, so BOTH of them will be updated!
+- **object copy options:**
+    - `Object.assign({}, existingObject, { new-property: new-value })`, the third parameter can of course also overwrite existing property/values
+    - ES6 spread `{...existingObject}``
+    - `Object.assign()` only goes one level deep!
+    - the poor man's deep clone: `JSON.parse(JSON.stringify(existingObject))` - make the object a string and immediately parse it back to an object, not recommended
+
 #### 15 Local Storage and Event Delegation
 ![arrays-and-objects](/screenshots/screen15-local-storage.png)
-Possible ToDo: add "select all" / "deselect all" buttons
+- create menu where you can add items and - after adding - immediately check/uncheck them
+- whatever's being entered will have a persisting state (local storage), after refreshing the page (`localStorage.setItems()`)
+- possible ToDo: add "select all" / "deselect all" buttons
+
 #### 16 CSS Text Shadow Mouse Move Effect
 ![mouse-move-effect](/screenshots/screen16-shadow-mouse-move01.png)
 ![mouse-move-effect](/screenshots/screen16-shadow-mouse-move02.png)
-Be aware of the element you are targeting! This might need recalculation of cursor position!
+**"Be aware of the element you are targeting! This might need recalculation of cursor position!**
+- create a shadow that follows mouse move
+
 #### 17 Sort Without Article
 ![sort-without-article](/screenshots/screen17-sort-without-article.png)
-Sort without "a", "an", "the" but keep those when listing/printing the sorted list.
+- sort band names without considering "a", "an", "the", but keep those when listing/printing the sorted list
+- `sort()`, `trim()`, `map()`, `join()`
+- [RegEx](https://regex101.com/)
+
 #### 18 Add Up Times
 ![add-up-times](/screenshots/screen18-add-up-times.png)
+- add up total number of hours, minutes, seconds of all videos
+- numbers are provided via **string** in `"data-time="xx:xx"`
+- convert them to numbers, add them all up to total
 - `.map()`
 - `.reduce()`
-- `Math.floor()`
 - modulo
+
 #### 19 Webcam Fun
 ![webcam-fun](/screenshots/screen19-webcam-fun01.png)
 ![webcam-fun](/screenshots/screen19-webcam-fun02.png)

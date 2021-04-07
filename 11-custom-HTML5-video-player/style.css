@@ -15,6 +15,8 @@ body {
 
 .player {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-image: url("placeholder.png");
+    background-size: cover;
     font-size: 0;
     max-width: 100%;
     overflow: hidden;

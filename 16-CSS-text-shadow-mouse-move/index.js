@@ -1,10 +1,12 @@
+// grab hero div
 const hero = document.querySelector('.hero');
+// grab text inside hero div
 const text = hero.querySelector('h1');
+// distance wandering shadow
 const walk = 200; // 200px
 
 function shadow(e) {
-    // const width = hero.offsetWidth; and
-    // const height = hero.offsetHeight; equals to:
+
     const { offsetWidth: width, offsetHeight: height } = hero;
     let { offsetX: x, offsetY: y } = e;
 
@@ -17,7 +19,7 @@ function shadow(e) {
         y = y + e.target.offsetTop;
     }
 
-    // if walk is 300, we wanna go from 150 to -150
+    // if 'walk' is 300, we wanna go from 150 to -150
     const xWalk = Math.round((x / width * walk) - (walk / 2));
     const yWalk = Math.round((y / height * walk) - (walk / 2));
 

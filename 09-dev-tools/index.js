@@ -18,7 +18,7 @@ function makeGreen() {
 // Regular
 console.log('hello')
 
-// Interpolated %s
+// Interpolated %s - will pass the second parameter into the first parameter
 console.log('I am: %s', 'a fool')
 
 // Styled %c

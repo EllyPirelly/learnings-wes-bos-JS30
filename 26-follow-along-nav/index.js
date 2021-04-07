@@ -5,7 +5,6 @@ const background = document.querySelector('.dropdownBackground');
 // grab the whole nav
 const nav = document.querySelector('.top');
 
-// listen for a hover in (mouseenter) and a hover out (mouseout)
 function handleEnter() {
     // 'this' is the list item
     this.classList.add('trigger-enter');

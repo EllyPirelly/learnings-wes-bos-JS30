@@ -1,4 +1,6 @@
+// grab things that will be hovered, need a backbround
 const triggers = document.querySelectorAll('a');
+// create highlight element
 const highlight = document.createElement('span');
 highlight.classList.add('highlight');
 // append the span with class highlight as the last element of the body
@@ -20,10 +22,11 @@ function highlightLink() {
         left: linkCoords.left + window.scrollX
     };
 
-        highlight.style.width = `${coords.width}px`;
-        highlight.style.height = `${coords.height}px`;
-        highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
+    highlight.style.width = `${coords.width}px`;
+    highlight.style.height = `${coords.height}px`;
+    highlight.style.transform = `translate(${coords.left}px, ${coords.top}px)`;
 
 }
 
+// listen to mouseenter on a tag
 triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));

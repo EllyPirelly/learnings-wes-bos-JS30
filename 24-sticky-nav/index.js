@@ -1,13 +1,13 @@
 // grab nav
 const nav = document.querySelector('#main');
+// grab position of nav
 const topOfNav = nav.offsetTop;
+// console.log(topOfNav);
 
-// run every page scroll
-// figure out where the top of the navbar is
-// figure out how far did we scoll
+// on page load, where's top of nav, how far did we scoll
 // when scrolling more than the top of the nav: nav sticky
 function fixNav() {
-    // on page load, where's top of nav
+
     // console.log(topOfNav, window.scrollY);
     if (window.scrollY >= topOfNav) {
         // to eliminate the content jump when nav snaps

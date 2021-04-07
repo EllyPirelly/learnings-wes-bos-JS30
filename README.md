@@ -138,7 +138,7 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 ![html5-canvas](/screenshots/screen08-HTML5-canvas.png)
 - enable drawing on HTML5 element `<canvas>` - that said, drawing will happen on `context` in 2d - via click and drag
 - listen for `mousedown`, `mousemove`, `mouseup`, `mouseout`
-- within the draw function, using some options we have on the `context` regarding color, linewidth etc
+- within the `draw()` function, using some options we have on the `context` regarding color, linewidth etc
 
 ### 09 Dev Tools
 ![dev-tools](/screenshots/screen09-dev-tools.png)
@@ -159,7 +159,7 @@ Heads up: unless stated otherwise, the majority of my code examples don't have b
 ### 10 ToDo List
 ![todo-list](/screenshots/screen10-todo-list.png)
 - click a checkbox, hold down shift key, click another checkbox - automatically also mark all of the checkboxes inbetween
-- works top to bottoema and bottom to top
+- works top to bottom and bottom to top
 - listen on `click` event on all checkboxes
 - check for shift key being down AND checked
 
@@ -311,7 +311,8 @@ heads-up:
 
 ### 27 Leporello Click and Drag Slider
 ![leporello-click-and-drag](/screenshots/screen27-leporello-slider.gif)
-- left/right click and dragable slider with (calculated) mouse actions `mousedown`, `mouseleave`, `mouseup` and `mousemove`
+- click and drag slider to left/right
+- (calculated) mouse actions `mousedown`, `mouseleave`, `mouseup` and `mousemove`
 
 ### 28 Video Speed Controller
 ![video-speed-controller](/screenshots/screen28-video-speed-controller.png
